@@ -8,11 +8,9 @@ function parola(name) {
     // Ciclo per invertire la parola
     for (let i = name.length - 1; i >= 0; i--) {
         reversed += name.charAt(i);
-    } if (name === reversed) {
-        return true; 
-    } else {
-        return false; 
-    }
+    } 
+    
+    return name === reversed;
 }
 
 console.log(isPalindroma); // true se è palindroma, altrimenti false
